@@ -1,1 +1,32 @@
+.container{
+    width:95%;
+    padding-bottom: 1.5%;
+}
 
+p{
+    padding: 0 2% .2% 2%;
+}
+
+h2{
+    padding-top:1%;
+}
+
+h4{
+    text-decoration: underline;
+}
+
+img, .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list, li{
+    list-style: decimal;
+    padding:2% 0 2% 0;
+}
+
+.nav-wrapper, li{
+    padding-right: 3%;
+    padding-left: 3%;
+}
