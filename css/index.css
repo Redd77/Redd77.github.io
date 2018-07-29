@@ -1,32 +1,129 @@
-.container{
+.container {
     width:95%;
     padding-bottom: 1.5%;
 }
 
-p{
+#referencesSection {
+    margin-bottom: 1%;
+}
+
+a {
+    text-decoration:none;
+    color: currentColor;
+    cursor: pointer;
+}
+
+p {
     padding: 0 2% .2% 2%;
 }
 
-h2{
+h2 {
     padding-top:1%;
 }
 
-h4{
+h4 {
     text-decoration: underline;
 }
 
-img, .center{
+img, .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.list, li{
+.list, li {
     list-style: decimal;
     padding:2% 0 2% 0;
 }
 
-.nav-wrapper, li{
+.nav-wrapper, li {
     padding-right: 3%;
     padding-left: 3%;
+}
+
+.navList:hover {
+    box-sizing: border-box;
+    box-shadow: inset 0 -.17em 0 white;
+}
+
+#sideNavTrigger {
+    align-content: flex-start;
+}
+
+.moreList {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: height .2s ease-out;
+}
+
+#moreTop {
+    padding-top: 0;
+}
+
+.visible {
+    display: block;
+    height: 264px;
+}
+
+#showMore:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+#showLess {
+    display: none;
+}
+
+#showLess:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.referenceImage {
+    margin-bottom: 2%;
+    transition-duration: 1s;
+}
+
+@media (max-width:1020px ) {
+    .referenceImage {
+        height: 100px;
+        margin-bottom:5%;
+    }
+    h4{
+        font-size: 25px;
+    }
+}
+
+.referenceImage:hover {
+    transform:scale(1.05);
+    box-shadow:0 3px 0;
+  }
+
+#githubLogo {
+border-radius: 50%;    
+}
+
+#linkedinLogo {
+    border-radius: 10%;
+}
+
+#facebookLogo {
+    border-radius: 15%;
+}
+
+#scrollTopButton {
+    /*display: none;*/
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    color: rgb(30, 144, 255);
+    opacity: .8;
+    transition: .2s linear;
+}
+
+#scrollTopButton:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: rotate(180deg);
 }

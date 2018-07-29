@@ -6,82 +6,124 @@
       <link rel="stylesheet" type="text/css" href="css/index.css">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Scripts -->
-      <script src="js/materialize.min.js"></script>
       <script src="js/index.js"></script>
-      <title>Fernando Arredondo</title>
+      <!-- metadata -->
+      <title>Fernando Arredondo: Developer</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="I am a learning developer who wants to ">
+      <meta name="keywords" content="Fernando Arredondo, developer, resumes, student">
    </head>
    <body>
       <nav class="nav-extended blue">
          <div class="nav-wrapper">
+            <!-- <img src="/Images/baseline-menu-24px.svg" class="left hide-on-large-only" id="sideNavTrigger"> -->
             <ul class="left hide-on-med-and-down">
-               <li><a href="#aboutSection">About Me</a></li>
-               <li><a href="#skillsSection">Skills</a></li>
-               <li><a href="#projectSection">Projects</a></li>
+               <li class="navList"><a href="#aboutSection">About Me</a></li>
+               <li class="navList"><a href="#skillsSection">Skills</a></li>
+               <!-- <li class="navList"><a href="#projectSection">Projects</a></li> -->
               </ul>
-              <a href="https://github.com/Redd77" target="_blank" class="brand-logo center hide-on-med-and-down">Fernando Arredondo</a>
-              <a href="https://github.com/Redd77" target="_blank" class="brand-logo center hide-on-large-only"><img src="Images/dev_logo.png" length="70px" width="70px" alt="Fernando Arredondo"></a>
+              <a href="https://github.com/Redd77" target="_blank" class="brand-logo center hide-on-small-only">Fernando Arredondo</a>
+              <a href="https://github.com/Redd77" target="_blank" class="brand-logo center hide-on-med-and-up"><img src="Images/dev_logo.png" length="70px" width="70px" alt="Fernando Arredondo"></a>
               <ul class="right hide-on-med-and-down">
-                  <li><a href="#educationInterestsSection">Education/interests</a></li>
-                <li><a href="#referencesSection">References</a></li>
+                  <li class="navList"><a href="#educationInterestsSection">Education/interests</a></li>
+                <li class="navList"><a href="#referencesSection">References</a></li>
             </ul>
          </div>
+         <ul class="sideNav hide-on-large-only">
+          <li><a href="#aboutSection">About Me</a></li>
+          <li><a href="#skillsSection">Skills</a></li>
+          <li><a href="#educationInterestsSection">Education/interests</a></li>
+          <!-- <li><a href="#projectSection">Projects</a></li> -->
+          <li><a href="#referencesSection">References</a></li>
+         </ul>
       </nav>
       <div class="container z-depth-3" id="aboutSection">
           <h2 class="center">Hello There!</h2>
-          <img src="Images/dev_logo.png" height="100px" class="hide-on-med-and-down" class="center">
-          <p class="flow-text center">My name is Fernando Arredondo. I am a learning developer, looking to further my skills and experience through various projects, courses, and challenges. In this website, I have provided my skills, current education, interests, and important projects that I have made over the past 3 years. If you would like to know more about me, or have any questions, my contact information will be listed in the references section of this site. Thank you for visiting!</p>
+          <img src="Images/dev_logo.png" height="100px" class="hide-on-med-and-down" class="center" alt="Fernando Arredondo">
+          <p class="flow-text center">My name is Fernando Arredondo. I am a learning developer, looking to further my skills and experience through various projects, courses, and challenges. In this website, I have provided my skills, current education, and major projects that I have developed over the past few years. If you would like to know more about me, or have any questions, my contact information will be listed in the references section of this site.<br />Thank you for visiting!</p>
       </div>
       <div class="container z-depth-3">
         <h2 class="center" id="skillsSection">Skills</h2>
         <h4 class="center">Programming Languages</h4>
         <ul class="list">
-          <li class="flow-text center"><b>HTML-</b> Hyper Text Markup Language, or HTML, is the building block language of all websites. It is the most basic and fundumental programming language for all web-developers.</li>
-          <li class="flow-text center"><b>CSS-</b> Cascading Style Sheets, or CSS, is the programming language that adds styling properties to any html element in a webpage. Like html, it is a substantial language in web-development.</li>
-          <li class="flow-text center"><b>Javascript-</b> Javascript is another web-development language that is highly important to web-development projects. Javascript mainly adds functionality and compatibility to websites. </li>
+          <li class="flow-text center"><b>Python -</b> Python is one of the simpler OOP languages that is most typically used with applications that are not highly dependant on execution speeds.</li>
+          <li class="flow-text center"><b>Javascript -</b> Javascript is another web-development language that is highly important to web-development projects. Javascript mainly adds functionality and compatibility to websites. </li>
+          <li class="flow-text center"><b>HTML -</b> Hyper Text Markup Language, or HTML, is the building block language of all websites. It is the most basic and fundumental programming language for all web-developers.</li>
         </ul>
+        <ul class="moreList" id="moreSkills">
+          <li class="flow-text center" id="moreTop"><b>CSS -</b> Cascading Style Sheets, or CSS, is the programming language that adds styling properties to any html element in a webpage. Like html, it is a substantial language in web-development.</li>
+          <li class="flow-text center"><b>C# -</b> C# is an object oriented programming (OOP) language that is primarily used for the development of desktop applications.</li>
+            <li class="flow-text center"><b>C++ (partial) -</b> C++ is another c-based OOP language that is more complex than C#, but has significantly faster execution speeds, making optimal for for applications that rely on performance.</li>
+          </ul>
+          <p class="flow-text center" id="showMore" onclick='toggleVisibility("moreSkills")'><b>Show More<br />▼</b></p>
         <h4 class="center">Operating Systems</h4>
         <div class="row">
           <div class="container col s12 m12 l9">
-            <p class="flow-text center"><b>Windows 7-10:</b> Advanced operation through the graphical interface, as well as advanced navigation through the powershell command prompt.</p>
+            <p class="flow-text center"><b>Windows 7-10:</b> Advanced operation through the graphical interface, as well as advanced navigation through the CLI (Command Prompt).</p>
           </div>
           <div class="container col s12 m12 l3">
-            <img src="Images/windows_10_logo.png.png" height="150px" class="center" alt="windows 10 logo">
+            <img src="Images/windows_10_logo.png.png" height="150px" class="center" alt="windows">
           </div>
         </div>
         <div class="row">
             <div class="container col s12 m12 l9">
-              <p class="flow-text center"><b>Linux:</b> Advanced use through the graphical interface and command terminal, specifically in Ubuntu based disributions.</p>
+              <p class="flow-text center"><b>Linux:</b> Advanced use through the graphical interface and CLI (Terminal), most experienced in Ubuntu-based distributions.</p>
             </div>
             <div class="container col s12 m12 l3">
-              <img src="Images/ubuntu-penguin.png" height="150px" class="center" alt="Ubuntu Logo">
+              <img src="Images/ubuntu-penguin.png" height="150px" class="center" alt="Ubuntu">
             </div>
           </div>
         <div class="row">
           <div class="container col s12 m12 l9">
-            <p class="flow-text center"><b>Chromium:</b> Lots of experience with the graphical interface, as well as moderate knowledge of crosh command interface.</p>
+            <p class="flow-text center"><b>Chromium:</b> Lots of experience with the graphical interface, as well as partial knowledge of the CLI (Crosh).</p>
           </div>
           <div class="container col s12 m12 l3">
-            <img src="Images/Chromium_11_Logo.png" height="150px" class="center" alt="Chromium Logo">
+            <img src="Images/Chromium_11_Logo.png" height="150px" class="center" alt="Chromium">
             </div>
         </div>
+        <h4 class="center">Other Notable Skills</h4>
+        <ul class="list">
+          <li class="flow-text center"><b>Foreign language(s):</b> Spanish (2 year-round courses)</li>
+          <li class="flow-text center"></li>
+          <li class="flow-text center"></li>
+        </ul>
       </div>
           <div class="row" id="educationInterestsSection">
           <div class="container">
               <div class="col l6 m12 s12" id="education">
                 <div class="center z-depth-3">
                   <h3 class="center">Education</h3>
-                  <p class="flow-text center">I am currently in the process of obtaining my high school diploma and, in the near future, plan to major in computer science at a secondary learning institute of my preference.</p>
+                  <p class="flow-text center">I am currently in the process of obtaining my high school diploma and, in the near future, plan to major in computer science at a suitable secondary learning facility.</p>
                 </div>
               </div>
               <div class="col l6 m12 s12" id="interests">
                 <div class="center z-depth-3">
                   <h3 class="center">Interests</h3>
+                  <ul class="list">
+                    <li class="flow-text"></li>
+                    <li class="flow-text center"></li>
+                    <li class="flow-text center"></li>
+                    <li class="flow-text center"></li>
+                  </ul>
                 </div>
           </div>
           </div>
         </div>
-        <div class="container z-depth-3" id="projectSection">
-          <h2 class="center">Projects</h2>
-        </div>
+        <div class="container z-depth-3" id="referencesSection">
+          <h3 class="center">References</h3>
+          <p class="flow-text center">You can contact me directly at arredondodev@gmail.com, or learn more about me at the social media sites below.</p>
+          <div class="row">
+              <div class="col s12 m4">
+                <a href="#referencesSection"><img src="/Images/linkedin-logo.png" height="175px" class="referenceImage" id="linkedinLogo" alt="Linkedin"></a>
+              </div>
+            <div class="col s12 m4">
+                <a href="https://github.com/Redd77"><img src="/Images/github_logo.png" height="175px" class="referenceImage" id="githubLogo" alt="Github"></a>
+            </div>
+            <div class="col s12 m4">
+              <a href="#referencesSection"><img src="Images/facebook_logo.png" height="175px" class="referenceImage" id="facebookLogo" alt="Facebook"></a>
+            </div>
+          </div>
+          </div>
+          <!-- <i class="material-icons medium" id="scrollTopButton" onclick="scrollTop()">arrow_drop_down_circle</i> -->
    </body>
 </html>
